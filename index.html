@@ -4,12 +4,21 @@
    <title>slsrs - tv</title>
    <style type='text/css'>
    body { background-image: url(https://i.imgur.com/FhcloDF.jpg); background-size: cover; }
-   .logo { position:fixed; z-index: 99999; right:30px; top:30px; background:#3788fa; }
+   .logo { position:fixed; z-index: 999999; right:30px; top:30px; background:#3788fa; }
    .img-logo { max-width:90px; height:auto; }
    </style>
    <audio id='noise' autoplay autostart loop src='https://upl.io/i/bdp9k8.mp3'></audio>
+   <script type='text/javascript'>
+      setTimeout(blah, 6000);
+      function blah() {
+         document.getElementById("noise").pause();
+         document.getElementById("frame").src = "https://www.youtube.com/embed/DG55gZCAo6c?autostart=true&autoplay=true&start=21";
+      }
+   </script>
 </head>
 <body>
+  <iframe id='frame' style='position:fixed;z-index:9999;width:100%;top:0;left:0;height:100%;display:none;' src="" frameborder="0" allowfullscreen></iframe>
+  <div style='position:fixed;z-index:99999;top:0;left:0;width:100%;height:100%;'></div>
   <div class='logo'> <img class='img-logo' src='https://i.imgur.com/EI4HRlR.png'></img> </div>
 </body>
 </html>
