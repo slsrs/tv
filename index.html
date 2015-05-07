@@ -9,8 +9,14 @@
    </style>
    <audio id='noise' autoplay autostart loop src='https://upl.io/i/bdp9k8.mp3'></audio>
    <script type='text/javascript'>
-      setTimeout(blah, 6000);
+      setTimeout(blah, 3000);
       function blah() {
+         document.getElementById("noise").pause();
+         document.getElementById("frame").src = "https://www.youtube.com/embed/oa6_Z4PcayU?autoplay=1&start=1&showinfo=0&controls=0";
+         document.getElementById("frame").style.display = 'block';
+         setTimeout(bloh, 25000);
+      }
+      function bloh() {
          document.getElementById("noise").pause();
          document.getElementById("frame").src = "https://www.youtube.com/embed/DG55gZCAo6c?autoplay=1&start=21&showinfo=0&controls=0";
          document.getElementById("frame").style.display = 'block';
